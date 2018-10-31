@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+	<form action="http://192.168.10.201/storage-web/lb/ilbstock/importExcel"  method="post" enctype="multipart/form-data">
+		<input name="file" type="file" />
+		<button type="submit">submit</button>
+	</form>
+
+	文件:<input type="file" name="fileUpload" id="fileUpload" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        /* $.ajax({
+            url: "http://192.168.10.201/storage-web/lb/ilbstock/list",
+            type: "get",
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function(data) {
+                console.log(data)
+            }
+        }) */
+        /* $(function (){
+        	
+        	$("#fileUpload").change(function() {
+                var formData = new FormData(); // FormData 对象
+                formData.append("fileUpload", document.getElementById("fileUpload").files[0]); // 文件对象
+
+               $.ajax({
+                    type: 'post',
+                    url:  "http://192.168.10.201/storage-web/lb/ilbstock/importExcel",
+                    data: formData,
+                    cache: false,
+                    processData: false,
+                    contentType: false
+                }).success(function (tempdata) {
+                    console.log(tempdata);
+                    
+                }).error(function () {
+                    alert("上传失败");
+                });
+        	});
+    }); */
+    </script>
+</body>
+
+</html>
